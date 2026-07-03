@@ -1,0 +1,51 @@
+monument_name,city,state,domestic_visitors_lakh,foreign_visitors_lakh,total_visitors_lakh,real_crowd_label
+Taj Mahal,Agra,Uttar Pradesh,61.0,6.8,67.8,High
+Agra Fort,Agra,Uttar Pradesh,17.0,2.18,19.18,Medium
+Fatehpur Sikri,Agra,Uttar Pradesh,8.5,0.8,9.3,Medium
+Qutub Minar,Delhi,Delhi,31.2,2.2,33.4,High
+Red Fort,Delhi,Delhi,22.0,1.5,23.5,Medium
+Humayun's Tomb,Delhi,Delhi,12.0,1.8,13.8,Medium
+Jantar Mantar,Delhi,Delhi,3.5,0.4,3.9,Low
+Konark Sun Temple,Konark,Odisha,32.0,0.5,32.5,High
+Khajuraho Temples,Khajuraho,Madhya Pradesh,9.5,1.2,10.7,Medium
+Sanchi Stupa,Sanchi,Madhya Pradesh,4.2,0.6,4.8,Low
+Ajanta Caves,Aurangabad,Maharashtra,4.8,0.9,5.7,Low
+Ellora Caves,Aurangabad,Maharashtra,7.2,0.7,7.9,Low
+Golconda Fort,Hyderabad,Telangana,15.0,0.5,15.5,Medium
+Charminar,Hyderabad,Telangana,9.28,0.3,9.58,Medium
+Mamallapuram,Mamallapuram,Tamil Nadu,15.0,1.2,16.2,Medium
+Brihadeeswarar Temple,Thanjavur,Tamil Nadu,18.0,0.4,18.4,Medium
+Hampi Monuments,Hampi,Karnataka,6.5,1.5,8.0,Medium
+Mysore Palace,Mysore,Karnataka,65.0,1.0,66.0,High
+Gol Gumbaz,Bijapur,Karnataka,5.2,0.3,5.5,Low
+Victoria Memorial,Kolkata,West Bengal,18.0,0.8,18.8,Medium
+Hawa Mahal,Jaipur,Rajasthan,12.0,0.9,12.9,Medium
+Amber Fort,Jaipur,Rajasthan,25.0,2.5,27.5,Medium
+Mehrangarh Fort,Jodhpur,Rajasthan,9.5,1.8,11.3,Medium
+City Palace Udaipur,Udaipur,Rajasthan,8.0,1.2,9.2,Medium
+Chittorgarh Fort,Chittorgarh,Rajasthan,7.5,0.4,7.9,Low
+Sun Temple Modhera,Mehsana,Gujarat,3.8,0.3,4.1,Low
+Rani Ki Vav,Patan,Gujarat,4.5,0.5,5.0,Low
+Gateway of India,Mumbai,Maharashtra,45.0,3.5,48.5,High
+Elephanta Caves,Mumbai,Maharashtra,7.0,1.2,8.2,Medium
+Bibi Ka Maqbara,Aurangabad,Maharashtra,5.5,0.6,6.1,Low
+Nalanda Ruins,Nalanda,Bihar,3.2,0.8,4.0,Low
+Mahabodhi Temple,Bodh Gaya,Bihar,12.0,2.5,14.5,Medium
+Sarnath,Varanasi,Uttar Pradesh,8.5,1.5,10.0,Medium
+Fatehpur Sikri,Agra,Uttar Pradesh,8.5,0.8,9.3,Medium
+Lingaraj Temple,Bhubaneswar,Odisha,35.0,0.3,35.3,High
+Jagannath Temple,Puri,Odisha,120.0,0.1,120.1,High
+Meenakshi Temple,Madurai,Tamil Nadu,25000.0,0.5,25000.5,High
+Golden Temple,Amritsar,Punjab,200.0,5.0,205.0,High
+Jallianwala Bagh,Amritsar,Punjab,15.0,1.0,16.0,Medium
+Wagah Border,Amritsar,Punjab,30.0,2.0,32.0,High
+Hawa Mahal,Jaipur,Rajasthan,12.0,0.9,12.9,Medium
+Jaisalmer Fort,Jaisalmer,Rajasthan,18.0,2.0,20.0,Medium
+India Gate,Delhi,Delhi,150.0,5.0,155.0,High
+Lotus Temple,Delhi,Delhi,80.0,3.0,83.0,High
+Qutub Minar Complex,Delhi,Delhi,31.2,2.2,33.4,High
+Rock Garden,Chandigarh,Chandigarh,12.0,0.5,12.5,Medium
+Mysuru Palace,Mysore,Karnataka,65.0,1.0,66.0,High
+Belur Math,Kolkata,West Bengal,20.0,0.5,20.5,Medium
+Dakshineswar Temple,Kolkata,West Bengal,25.0,0.3,25.3,Medium
+Tirupati Temple,Tirupati,Andhra Pradesh,250.0,2.0,252.0,High

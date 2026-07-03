@@ -1,0 +1,6 @@
+place_id,city,state,zone,place_type,rating,num_reviews,year,month,has_major_festival,is_school_vacation,season_Winter,season_Monsoon,season_Summer,busyness_avg,search_trend_this_month,relative_crowd_label
+P_00001,Agra,Uttar Pradesh,Northern,Heritage,4.8,450000,2026,10,1,0,0,0,0,65.3,85.2,High
+P_00002,Delhi,Delhi,Northern,Heritage,4.7,85000,2026,10,1,0,0,0,0,72.1,78.4,High
+P_00003,Jaipur,Rajasthan,Northern,Heritage,4.6,120000,2026,10,1,0,0,0,0,58.4,62.1,High
+P_00004,Mumbai,Maharashtra,Western,Tourist Spot,4.5,95000,2026,10,1,0,0,0,0,45.2,45.8,Medium
+P_00005,Varanasi,Uttar Pradesh,Northern,Religious,4.7,75000,2026,10,1,0,0,0,0,81.0,71.3,High

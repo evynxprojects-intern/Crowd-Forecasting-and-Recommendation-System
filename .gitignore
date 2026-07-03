@@ -1,0 +1,63 @@
+# ── Large data files (store on Google Drive) ──────
+*.csv
+*.json
+!data/sample_data.csv
+!data/asi_visitor_data.csv
+!data/calendar_lookup_2025_2027.csv
+!src/india_tourist_crowd_features.json
+
+# ── Model files ────────────────────────────────────
+models/*.pkl
+models/*.joblib
+*.pkl
+*.joblib
+
+# ── API Keys ───────────────────────────────────────
+.env
+*.env
+secrets.json
+config.py
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter / Colab ───────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Virtual environment ────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── OS files ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── MLflow ────────────────────────────────────────
+mlruns/
+mlartifacts/
+
+# ── Logs ──────────────────────────────────────────
+*.log
+logs/
+
+# ── Checkpoints ───────────────────────────────────
+*checkpoint*.json
+popular_times_real.json
+places_raw_checkpoint.json
