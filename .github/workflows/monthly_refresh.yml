@@ -1,0 +1,85 @@
+name: Monthly Ratings & Weather Refresh
+
+on:
+  schedule:
+    # 1st of every month at 8:30 PM UTC (2:00 AM IST next day)
+    - cron: '30 20 1 * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  refresh-ratings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180  # 3 hours max
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas numpy scipy
+
+      - name: Run monthly ratings refresh
+        run: |
+          python refresh/refresh_ratings.py
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Commit updated ratings data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/ratings_checkpoint.json data/psi_log.json || true
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "Auto: Monthly ratings refresh $(date '+%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  refresh-weather:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    needs: refresh-ratings  # Run after ratings
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas numpy
+
+      - name: Run monthly weather refresh
+        run: |
+          python refresh/refresh_weather.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Commit updated weather data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/weather_updated.json data/weather_forecast_seas5.json || true
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "Auto: Monthly weather refresh $(date '+%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Monthly refresh complete
+        run: |
+          echo "✅ Monthly refresh complete: ratings + weather updated"
+          echo "   Check data/psi_log.json for drift detection results"
